@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curriculum Vitae - Amelia Azzahra</title>
 
-    <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
     <style>
@@ -24,6 +23,7 @@
             border-radius: 8px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.1);
             overflow: hidden;
+            padding-bottom: 30px; /* Tambahan padding bawah agar tidak terlalu mepet */
         }
 
         /* Header */
@@ -106,20 +106,14 @@
             width: 30%;
         }
 
-        /* Links */
-        .drive-link {
+        /* Links & Buttons */
+        .action-links {
             text-align: center;
-            margin: 30px;
-        }
-
-        /* Instagram Button */
-        .center-container {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 40px;
+            margin-top: 40px;
         }
 
         .instagram-button {
+            display: inline-block;
             padding: 12px 20px;
             font-size: 18px;
             font-weight: bold;
@@ -131,10 +125,22 @@
                 #d6249f 60%, #285AEB 90%);
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
             transition: 0.3s;
+            margin-bottom: 20px;
         }
 
         .instagram-button:hover {
             transform: translateY(-5px);
+        }
+
+        .drive-link {
+            display: block;
+            text-decoration: none;
+            color: #112979;
+            font-weight: bold;
+        }
+
+        .drive-link:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -210,17 +216,15 @@
         <h3>SMA Gunung Madu</h3>
     </div>
 
-    <div class="drive-link">
-        <a href="https://drive.google.com/drive/folders/1HtCWcTtAcBl-TzbqSRLKtxouVq1FglgU" target="_blank">
+    <div class="action-links">
+        <a href="https://www.instagram.com/teaamelll" target="_blank" class="instagram-button">
+            Instagram Amel
+        </a>
+        <br>
+        <a href="https://drive.google.com/drive/folders/1HtCWcTtAcBl-TzbqSRLKtxouVq1FglgU" target="_blank" class="drive-link">
             Lihat Portofolio
         </a>
     </div>
-</div>
-
-<div class="center-container">
-    <a href="https://www.instagram.com/teaamelll" target="_blank" class="instagram-button">
-        Instagram Amel
-    </a>
 </div>
 
 </body>
